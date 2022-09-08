@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return ;
+// })->middleware('auth');
+
+
+Route::redirect('/', config('filament.path'), 302);
